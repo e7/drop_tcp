@@ -1,0 +1,6 @@
+# drop_tcp
+package lost simulation
+
+$ make
+# insmod drop_tcp.ko
+# rmmod drop_tcp
