@@ -1,3 +1,5 @@
+.PHONY: all clean
+
 obj-m+=drop_tcp.o
 
 all:
