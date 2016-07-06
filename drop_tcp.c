@@ -60,7 +60,7 @@ static int __init drop_init(void)
 
     nf_register_hook(&nfho);
 
-   return 0;
+    return 0;
 }
 
 
@@ -73,6 +73,8 @@ static int __init drop_init(void)
 static void __exit drop_exit(void)
 {
     //printk(KERN_INFO "EBB: Goodbye %s from the hello LKM!\n", name);
+
+    nf_unregister_hook(&nfho);
 
     return;
 }
